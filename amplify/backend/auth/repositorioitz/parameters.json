@@ -1,5 +1,5 @@
 {
-    "identityPoolName": "repositorioitz_identitypool_5af26805",
+    "identityPoolName": "awsitzproyecto40be6175_identitypool_40be6175",
     "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "awsitzabb5ffcb",
     "userPoolName": "UsuariosITZ",
@@ -32,7 +32,10 @@
         "profile"
     ],
     "userpoolClientReadAttributes": [
-        "email"
+        "email",
+        "family_name",
+        "name",
+        "profile"
     ],
     "userpoolClientLambdaRole": "reposiabb5ffcb_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": true,
@@ -51,14 +54,14 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
+    "useDefault": "manual",
     "usernameAttributes": [
         "email"
     ],
     "userPoolGroups": true,
-    "adminQueries": true,
+    "adminQueries": false,
     "triggers": "{\n  \"CustomMessage\": [\n    \"verification-link\"\n  ]\n}",
-    "hostedUI": true,
+    "hostedUI": false,
     "userPoolGroupList": [
         "UsuariosITZ"
     ],
@@ -80,5 +83,6 @@
             ]
         }
     ],
-    "authProviders": []
+    "authProviders": [],
+    "thirdPartyAuth": false
 }

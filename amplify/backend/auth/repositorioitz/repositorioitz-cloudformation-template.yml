@@ -173,11 +173,15 @@ Parameters:
   dependsOn:
     Type: CommaDelimitedList
       
-            
         
   authProviders:
     Type: CommaDelimitedList
       
+  
+  thirdPartyAuth:
+    Type: String
+            
+            
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
   
@@ -476,7 +480,7 @@ Resources:
   # Always created
     Type: AWS::Cognito::IdentityPool
     Properties:
-      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'repositorioitz_identitypool_5af26805', !Join ['',['repositorioitz_identitypool_5af26805', '__', !Ref env]]]
+      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'awsitzproyecto40be6175_identitypool_40be6175', !Join ['',['awsitzproyecto40be6175_identitypool_40be6175', '__', !Ref env]]]
       
       CognitoIdentityProviders:
         - ClientId:  !Ref UserPoolClient
