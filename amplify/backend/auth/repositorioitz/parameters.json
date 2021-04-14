@@ -1,4 +1,6 @@
 {
+    "identityPoolName": "repositorioitz_identitypool_5af26805",
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "awsitzabb5ffcb",
     "userPoolName": "UsuariosITZ",
     "autoVerifiedAttributes": [
@@ -36,7 +38,7 @@
     "userpoolClientSetAttributes": true,
     "sharedId": "abb5ffcb",
     "resourceName": "repositorioitz",
-    "authSelections": "userPoolOnly",
+    "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -49,7 +51,7 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
+    "useDefault": "default",
     "usernameAttributes": [
         "email"
     ],
@@ -57,10 +59,6 @@
     "adminQueries": true,
     "triggers": "{\n  \"CustomMessage\": [\n    \"verification-link\"\n  ]\n}",
     "hostedUI": true,
-    "hostedUIDomainName": "registroitz",
-    "authProvidersUserPool": [],
-    "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d3t8qrzt98k497.amplifyapp.com/registro.html/\",\"https://repositorioitz.com.s3-website.us-east-2.amazonaws.com/registro.html/\"],\"LogoutURLs\":[\"https://repositorioitz.com.s3-website.us-east-2.amazonaws.com/index.html/\",\"https://main.d3t8qrzt98k497.amplifyapp.com/\"]}",
     "userPoolGroupList": [
         "UsuariosITZ"
     ],
@@ -81,5 +79,6 @@
                 "Name"
             ]
         }
-    ]
+    ],
+    "authProviders": []
 }
