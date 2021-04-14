@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awsitzproyecto-dev-212336-authRole",
+      "UnauthRoleArn": "arn:aws:iam::169343032330:role/amplify-awsitzproyecto-dev-212336-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::169343032330:role/amplify-awsitzproyecto-dev-212336-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-awsitzproyecto-dev-212336-deployment",
+      "UnauthRoleName": "amplify-awsitzproyecto-dev-212336-unauthRole",
+      "StackName": "amplify-awsitzproyecto-dev-212336",
+      "StackId": "arn:aws:cloudformation:us-east-2:169343032330:stack/amplify-awsitzproyecto-dev-212336/ae07c830-9d67-11eb-99b2-0255d4fcdd9c",
+      "AmplifyAppId": "d36p50fot0w0eh"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d36p50fot0w0eh",
+          "type": "manual"
+        }
+      },
+      "function": {
+        "repositorioitzCustomMessage": {
+          "REDIRECTURL": "",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": ""
+        }
+      },
+      "auth": {
+        "repositorioitz": {}
+      }
+    }
+  }
+}
