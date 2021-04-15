@@ -22,7 +22,9 @@
         "repositorioitzCustomMessage": {
           "REDIRECTURL": "",
           "EMAILSUBJECT": "",
-          "EMAILMESSAGE": ""
+          "EMAILMESSAGE": "",
+          "deploymentBucketName": "amplify-awsitzproyecto-dev-212336-deployment",
+          "s3Key": "amplify-builds/repositorioitzCustomMessage-432f323532796f424366-build.zip"
         }
       },
       "auth": {
